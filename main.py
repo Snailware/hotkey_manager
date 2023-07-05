@@ -11,7 +11,7 @@ def main():
         hotkey_data = load(hotkey_file)
     # get and parse json data from file. 
 
-    print(' mapping hotkeys.\n\n\tHOTKEYS\n\n ------------------------')
+    print(' mapping hotkeys.\n\n\tHOTKEYS\n\n ---------------------')
     for hotkey in hotkey_data['hotkeys']:
         key = hotkey['hotkey']
         sent_key = hotkey['sent_key']
