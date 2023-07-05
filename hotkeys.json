@@ -1,0 +1,20 @@
+{
+    "hotkeys": [
+        {
+            "hotkey" : "f1",
+            "sent_key" : "playpause"
+        },
+        {
+            "hotkey" : "f2",
+            "sent_key" : "volumedown"
+        },
+        {
+            "hotkey" : "f3",
+            "sent_key" : "volumeup"
+        },
+        {
+            "hotkey" : "f4",
+            "sent_key" : "nexttrack"
+        }
+    ]
+}
