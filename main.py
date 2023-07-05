@@ -15,11 +15,12 @@ def main():
     for hotkey in hotkey_data['hotkeys']:
         key = hotkey['hotkey']
         sent_key = hotkey['sent_key']
+        description = hotkey['description']
         kb.add_hotkey(hotkey=key,
                       callback=create_callback(sent_key),
                       suppress=True,
                       trigger_on_release=True)
-        print(f' {key} -> {sent_key}')
+        print(f' {key} -> {description}')
     print(f'\n {EXIT_KEY} -> unmap hotkeys and close program.')
     # remap hotkeys according to json data, and display hotkeys.
 
