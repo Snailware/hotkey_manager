@@ -2,19 +2,23 @@
     "hotkeys": [
         {
             "hotkey" : "f1",
-            "sent_key" : "playpause"
+            "sent_key" : "playpause",
+            "description" : "play / pause"
         },
         {
             "hotkey" : "f2",
-            "sent_key" : "volumedown"
+            "sent_key" : "volumedown",
+            "description" : "volume down"
         },
         {
             "hotkey" : "f3",
-            "sent_key" : "volumeup"
+            "sent_key" : "volumeup",
+            "description" : "volume up"
         },
         {
             "hotkey" : "f4",
-            "sent_key" : "nexttrack"
+            "sent_key" : "nexttrack",
+            "description" : "next track"
         }
     ]
 }
