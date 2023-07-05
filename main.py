@@ -16,7 +16,7 @@ def main():
         key = hotkey['hotkey']
         sent_key = hotkey['sent_key']
         kb.add_hotkey(hotkey=key,
-                      callback=lambda: pag.press(sent_key),
+                      callback=create_callback(sent_key),
                       suppress=True,
                       trigger_on_release=True)
         print(f' {key} -> {sent_key}')
@@ -27,6 +27,9 @@ def main():
     kb.remove_all_hotkeys()
     exit()
     # close on EXIT_KEY press.
+
+def create_callback(sent_key: str):
+    return lambda: pag.press(sent_key)
 
 if __name__ == '__main__':
     main()
