@@ -7,6 +7,7 @@ import pyautogui as pag
 
 def main():
     EXIT_KEY = 'esc'
+    pag.FAILSAFE = False
     log.basicConfig(filename='hotkey_manager.log',
                     filemode="a",
                     format='%(asctime)s | %(levelname)s | %(message)s',
